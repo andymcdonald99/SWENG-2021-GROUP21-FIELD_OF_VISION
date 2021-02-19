@@ -1,0 +1,37 @@
+public class Test{
+    public static void main(String[] args) {
+        double[] wCoordinates = new double[] {5.5, 5.7, 6, 5.9, 6.1, 6.5, 7, 7.2, 7.3, 6.5, 6.2, 6, 8, 7.7, 7.6, 7.4, 6.8, 5.5, 5.2, 5.3, 5.4, 5.2, 5.3, 5.4, 5.8, 6, 6.1, 6.2, 6.3, 6.4, 4.8, 4.7, 4.7, 5, 5};
+        double[] lCoordinates = new double[] {4.5, 4, 3.7, 3, 2.5, 2.6, 2.6, 2.6, 2.3, 1.9, 1.7, 1.4, 1.7, 1.8, 1.8, 2.7, 3.7, 4.2, 4.7, 5.2, 5.8, 6.3, 7.5, 8, 9, 9, 6.5, 6, 4.5, 3.5, 2.4, 1.8, 1.7, 0.3, 0};
+        double currentPosW;
+        double nextPosW;
+        double currentPosL;
+        double nextPosL;
+        double speedL;
+        double speedW;
+        
+       for(int i=0; i<wCoordinates.length; i++) {
+           currentPosW = wCoordinates[i]*1100;
+           currentPosL = lCoordinates[i]*1700;
+           if (i == (wCoordinates.length - 1)){
+               nextPosW = 0;
+               nextPosL = 0;
+           }
+           else {
+               nextPosW = wCoordinates[i+1]*1100;
+               nextPosL = lCoordinates[i+1]*1700;
+           }
+           speedW = Math.abs(nextPosW-currentPosW);
+           speedL = Math.abs(nextPosL-currentPosL);
+           
+           System.out.println("positions[0] = " + currentPosW + ";");
+           System.out.println("positions[0] = " + currentPosL + ";");
+           System.out.println("stepper1.setMaxSpeed(" + speedW + ");");
+           System.out.println("stepper2.setMaxSpeed(" + speedL + ");");
+           System.out.println("steppers.moveTo(positions);");
+           System.out.println("steppers.runSpeedToPosition(); // Blocks until all are in position");
+           //System.out.println("delay(1000);");
+           System.out.println();
+           
+       }
+    }
+}
