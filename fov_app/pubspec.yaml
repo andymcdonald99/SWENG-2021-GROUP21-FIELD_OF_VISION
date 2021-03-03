@@ -33,6 +33,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   swipedetector: 1.2.0
+  flutter_launcher_icons: "^0.8.0"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "images/fov_icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,6 +65,7 @@ flutter:
     - images/img9.jpg
     - images/img10.jpg
     - images/img11.jpg
+    - images/fov_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
