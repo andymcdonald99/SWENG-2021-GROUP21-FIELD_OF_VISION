@@ -66,6 +66,7 @@ flutter:
     - images/img10.jpg
     - images/img11.jpg
     - images/fov_icon.png
+    - images/logowhite.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
