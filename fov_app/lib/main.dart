@@ -83,7 +83,10 @@ class SecondRoute extends StatelessWidget {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Container(
-          child: Image.network("https://fov.ie/images/logowhite.png"),
+          child: Image.asset(
+            "images/logowhite.png",
+            fit: BoxFit.fitWidth,
+          ),
         ),
         backgroundColor: Colors.grey,
       ),
