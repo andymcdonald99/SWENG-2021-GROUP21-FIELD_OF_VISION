@@ -34,6 +34,7 @@ dev_dependencies:
     sdk: flutter
   swipedetector: 1.2.0
   flutter_launcher_icons: ^0.8.0
+  google_fonts:
 
 flutter_icons:
   ios: true
@@ -72,6 +73,12 @@ flutter:
     - images/fov_icon.png
     - images/logowhite.png
     - images/round_icon.svg
+    - images/fov_logo_transparent.png
+    - images/fov_logo_transparent.svg
+    - images/fov_text_transparent.png
+    - images/fov_text_transparent.svg
+    - images/tablet_transparent.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
