@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:swipedetector/swipedetector.dart';
 
@@ -43,6 +45,7 @@ class SecondPage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => ThirdPage()),
                       );
                     },
+                    child: null,
                   );
                 },
                 child: new Image.asset(

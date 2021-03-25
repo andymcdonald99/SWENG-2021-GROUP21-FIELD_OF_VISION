@@ -8,6 +8,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     const blue_grad_end = const Color(0xff3A527A); // gradient color 1
     const blue_grad_start = const Color(0xff3E75AC); // gradient color 2
+    double screen_height = MediaQuery.of(context).size.height;
 
     return Container(
       decoration: BoxDecoration(
@@ -34,6 +35,9 @@ class FirstPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(screen_height * 0.001),
+            ),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
@@ -65,7 +69,7 @@ class FirstPage extends StatelessWidget {
             // padding so that the button gets pushed down makesure
             // to use some parameter rather than a value
             Padding(
-              padding: EdgeInsets.all(270.0),
+              padding: EdgeInsets.all(screen_height * 0.275),
             ),
 
             // responsible for the button
