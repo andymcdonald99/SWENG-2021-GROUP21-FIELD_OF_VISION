@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fovapp-dev-174512-authRole",
+      "UnauthRoleArn": "arn:aws:iam::478106269435:role/amplify-fovapp-dev-174512-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::478106269435:role/amplify-fovapp-dev-174512-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-fovapp-dev-174512-deployment",
+      "UnauthRoleName": "amplify-fovapp-dev-174512-unauthRole",
+      "StackName": "amplify-fovapp-dev-174512",
+      "StackId": "arn:aws:cloudformation:eu-west-2:478106269435:stack/amplify-fovapp-dev-174512/f5557ac0-9952-11eb-ac7c-0a2c9ae353be",
+      "AmplifyAppId": "drvz2og05p18x"
+    }
+  }
+}
