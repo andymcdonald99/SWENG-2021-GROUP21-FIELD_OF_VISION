@@ -1,4 +1,4 @@
-package com.example.fov_app
+package com.fieldofvision.fov
 
 import io.flutter.embedding.android.FlutterActivity
 

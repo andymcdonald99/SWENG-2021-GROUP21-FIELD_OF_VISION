@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "366923727545",
+    "project_id": "fov-app",
+    "storage_bucket": "fov-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366923727545:android:4550cb0ad7a9cba4d39168",
+        "android_client_info": {
+          "package_name": "com.fieldofvision.fov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366923727545-ag9kpo5rs780k72e9otkidu38rctr626.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ2xRqlUYR_HqP7uBEDiu7MHkLqY-PHnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366923727545-ag9kpo5rs780k72e9otkidu38rctr626.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
