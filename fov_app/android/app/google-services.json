@@ -7,6 +7,7 @@
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:366923727545:android:d1639d90cd094ef6d39168",
         "android_client_info": {
           "package_name": "com.example.fov_app"
@@ -36,6 +37,8 @@
     },
     {
       "client_info": {
+=======
+>>>>>>> 4872966113ff9e7d5bd3db891a62c43027fd2798
         "mobilesdk_app_id": "1:366923727545:android:4550cb0ad7a9cba4d39168",
         "android_client_info": {
           "package_name": "com.fieldofvision.fov"
