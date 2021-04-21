@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:swipedetector/swipedetector.dart';
-
 import 'third_page.dart';
 
 class SecondPage extends StatelessWidget {
@@ -32,7 +31,24 @@ class SecondPage extends StatelessWidget {
             children: <Widget>[
               GestureDetector(
                 onTap: () {
-                  debugPrint('Loading co-ordinates for game  $game');
+                  String matchNum = game.toString();
+                  String matchData = 'match$matchNum';
+                  CollectionReference match = FirebaseFirestore.instance
+                      .collection('MatchData')
+                      .docs('matchData');
+                  return FutureBuilder<DocumentSnapshot>(
+                    future: users.doc(documentId).get(),
+                    builder: (BuildContext context,
+                        AsyncSnapshot<DocumentSnapshot> snapshot) {
+                      if (snapshot.connectionState == ConnectionState.done) {
+                        Map<String, dynamic> data = snapshot.data.data();
+                        return Text("Coords: ${data['coord']}");
+                      }
+
+                      return Text("loading");
+                    },
+                  );
+
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ThirdPage()),
