@@ -8,40 +8,41 @@ class FBtest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Firebase Demo",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Firebase'),
+        title: "Firebase Demo",
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => FirebaseFirestore.instance
-              .collection('testing')
-              .add({'timestamp': Timestamp.fromDate(DateTime.now())}),
-          child: Icon(Icons.add),
-        ),
-        body: StreamBuilder(
-          stream: FirebaseFirestore.instance.collection('testing').snapshots(),
-          builder: (
-            BuildContext context,
-            AsyncSnapshot<QuerySnapshot> snapshot,
-          ) {
-            if (!snapshot.hasData) return const SizedBox.shrink();
-            return ListView.builder(
-              itemCount: snapshot.data.docs.length,
-              itemBuilder: (BuildContext context, int index) {
-                final docData = snapshot.data.docs[index].data();
-                final dateTime = (docData['timestamp'] as Timestamp).toDate()};
-                return ListTile(
-                  title: Text(dateTime.toString()),
-                );
-              },
-            );
-          },
-      ),
-    )
-  );
-}}
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text('Firebase'),
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () => FirebaseFirestore.instance
+                .collection('testing')
+                .add({'timestamp': Timestamp.fromDate(DateTime.now())}),
+            child: Icon(Icons.add),
+          ),
+          body: StreamBuilder(
+            stream:
+                FirebaseFirestore.instance.collection('testing').snapshots(),
+            builder: (
+              BuildContext context,
+              AsyncSnapshot<QuerySnapshot> snapshot,
+            ) {
+              if (!snapshot.hasData) return const SizedBox.shrink();
+              return ListView.builder(
+                itemCount: snapshot.data.docs.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final docData = snapshot.data.docs[index].data();
+                  final dateTime = (docData['timestamp'] as Timestamp).toDate();
+                  return ListTile(
+                    title: Text(dateTime.toString()),
+                  );
+                },
+              );
+            },
+          ),
+        ));
+  }
+}
