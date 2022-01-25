@@ -34,14 +34,6 @@ Github repository for Software Engineering Group 21 (2021). -->
   <p align="center">
     Github repository for Software Engineering Group 21 (2021).
     <br />
-    <!-- <a href="https://github.com/andymcdonald99/SWENG-2021-GROUP21-FIELD_OF_VISION"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/andymcdonald99/SWENG-2021-GROUP21-FIELD_OF_VISION">View Demo</a>
-    ·
-    <a href="https://github.com/andymcdonald99/SWENG-2021-GROUP21-FIELD_OF_VISION/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/andymcdonald99/SWENG-2021-GROUP21-FIELD_OF_VISION/issues">Request Feature</a> -->
   </p>
 </p>
 
@@ -64,12 +56,7 @@ Github repository for Software Engineering Group 21 (2021). -->
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -78,6 +65,12 @@ Github repository for Software Engineering Group 21 (2021). -->
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Github repository for Software Engineering Group 21 (2021)
+
+**App Demo :**
+<p align="center">
+<img src="https://user-images.githubusercontent.com/59068112/151017188-ab72e018-ceb5-4b5f-95ee-59f9d0815930.gif" width="300" height="615" />
+</p>
+<!-- ![fov-gif](https://user-images.githubusercontent.com/59068112/151017188-ab72e018-ceb5-4b5f-95ee-59f9d0815930.gif) -->
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 
@@ -115,30 +108,7 @@ You also need an *android* or an *iOS simulator* to be able to run the app.
    flutter run
    ```
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage - Work in Progress
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
 _For more examples, please refer to the [Official Website](https://fov.ie/)_
-
-
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-<!-- Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**. -->
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 
 
 <!-- LICENSE
@@ -150,7 +120,7 @@ If we ever choose to license this. -->
 
 
 <!-- CONTACT -->
-## Contact - Email :
+## Contact
 
 Andy    - `mcdonaa6@tcd.ie`</br>
 Luke    - `mcgratlu@tcd.ie`</br>
@@ -158,18 +128,6 @@ Deneher - `ddeneher@tcd.ie`</br>
 Andrew  - `mandrew@tcd.ie`</br>
 Aislinn - `addisona@tcd.ie`</br>
 John    - `kommalaj@tcd.ie`</br>
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements - Work in Progress
-
-* []()
-* []()
-* []()
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
